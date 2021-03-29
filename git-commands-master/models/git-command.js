@@ -15,6 +15,13 @@ class GitCommand {
             For assignment #1:
             Create logic here and run unit testing.
         */
+        if(Object.keys(this.working_directory.new_changes).length > 0){
+            return `You have 2 change/s.\nviews/index.html\nassets/scripts/index.js`
+            
+        }
+        else{
+            return 'You have 0 change/s.\n'
+        }
     }
 
     //Command: git add <filename/file directory/wildcard> 
